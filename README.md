@@ -4,6 +4,7 @@ Thesis: Multiple Machine Translation Proposals in Post-editing
 Followed tutorial:
 1. JoeyNMT
 tutorial: https://joeynmt.readthedocs.io/en/latest/tutorial.html
+github: https://github.com/joeynmt/joeynmt
 paper: https://arxiv.org/pdf/1907.12484.pdf
 preprocessing following paper: https://arxiv.org/pdf/1712.05690.pdf
 
