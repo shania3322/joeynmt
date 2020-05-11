@@ -1,7 +1,7 @@
 ## NMT-programming
 Thesis: Multiple Machine Translation Proposals in Post-editing
 
-#Followed tutorial:
+Followed tutorial:
 1. JoeyNMT
 tutorial: https://joeynmt.readthedocs.io/en/latest/tutorial.html 
 github: https://github.com/joeynmt/joeynmt 
@@ -17,8 +17,7 @@ tutorial: https://opennmt.net/OpenNMT-py/quickstart.html#step-1-preprocess-the-d
 Other tutorial:
 Build Transformer: http://nlp.seas.harvard.edu/2018/04/03/attention.html
 
-
-#Datasets
+**Datasets**
 WMT17 preprocessed de-en 
 data.statmt.org/wmt17/translation-task/preprocessed/de-en/ 
 
