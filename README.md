@@ -14,7 +14,7 @@ github: https://github.com/OpenNMT/OpenNMT-py
 tutorial: https://opennmt.net/OpenNMT-py/quickstart.html#step-1-preprocess-the-data  
 
 
-Other tutorial:
+###Other tutorial:  
 Build Transformer: http://nlp.seas.harvard.edu/2018/04/03/attention.html  
 Explaining Tokenization: https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html  
 
