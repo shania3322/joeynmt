@@ -15,7 +15,8 @@ tutorial: https://opennmt.net/OpenNMT-py/quickstart.html#step-1-preprocess-the-d
 
 
 Other tutorial:
-Build Transformer: http://nlp.seas.harvard.edu/2018/04/03/attention.html
+Build Transformer: http://nlp.seas.harvard.edu/2018/04/03/attention.html  
+Explaining Tokenization: https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html  
 
 
 **Datasets**\
