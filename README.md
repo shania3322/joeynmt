@@ -24,19 +24,24 @@ Followed by Sockeye :
 https://github.com/shania3322/sockeye/tree/arxiv_1217/arxiv/code  
 
 Training:  
+```
 wget -nc http://www.statmt.org/wmt13/training-parallel-europarl-v7.tgz  
 wget -nc http://www.statmt.org/wmt13/training-parallel-commoncrawl.tgz  
 wget -nc http://data.statmt.org/wmt17/translation-task/training-parallel-nc-v12.tgz  
 wget -nc http://data.statmt.org/wmt17/translation-task/rapid2016.tgz  
+```
 
 Dev and Test:  
+```
 wget -nc http://data.statmt.org/wmt17/translation-task/dev.tgz  
 wget -nc http://data.statmt.org/wmt17/translation-task/test.tgz  
+```
 
 Extract files:  
+```
 tar -xzvf training-parallel-europarl-v7.tgz  
 ...  
-
+```
 
 ##Other datasets:  
 Multi30k https://github.com/multi30k/dataset   
