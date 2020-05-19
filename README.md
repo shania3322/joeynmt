@@ -43,7 +43,7 @@ tar -xzvf training-parallel-europarl-v7.tgz
 ...  
 ```
 
-##Other datasets:  
+## Other datasets:  
 Multi30k https://github.com/multi30k/dataset   
   
 
