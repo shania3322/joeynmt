@@ -1,0 +1,433 @@
+2020-05-12 16:47:34,244 Hello! This is Joey-NMT.
+2020-05-12 16:47:35,805 Total params: 58957824
+2020-05-12 16:47:35,807 Trainable parameters: ['decoder.layer_norm.bias', 'decoder.layer_norm.weight', 'decoder.layers.0.dec_layer_norm.bias', 'decoder.layers.0.dec_layer_norm.weight', 'decoder.layers.0.feed_forward.layer_norm.bias', 'decoder.layers.0.feed_forward.layer_norm.weight', 'decoder.layers.0.feed_forward.pwff_layer.0.bias', 'decoder.layers.0.feed_forward.pwff_layer.0.weight', 'decoder.layers.0.feed_forward.pwff_layer.3.bias', 'decoder.layers.0.feed_forward.pwff_layer.3.weight', 'decoder.layers.0.src_trg_att.k_layer.bias', 'decoder.layers.0.src_trg_att.k_layer.weight', 'decoder.layers.0.src_trg_att.output_layer.bias', 'decoder.layers.0.src_trg_att.output_layer.weight', 'decoder.layers.0.src_trg_att.q_layer.bias', 'decoder.layers.0.src_trg_att.q_layer.weight', 'decoder.layers.0.src_trg_att.v_layer.bias', 'decoder.layers.0.src_trg_att.v_layer.weight', 'decoder.layers.0.trg_trg_att.k_layer.bias', 'decoder.layers.0.trg_trg_att.k_layer.weight', 'decoder.layers.0.trg_trg_att.output_layer.bias', 'decoder.layers.0.trg_trg_att.output_layer.weight', 'decoder.layers.0.trg_trg_att.q_layer.bias', 'decoder.layers.0.trg_trg_att.q_layer.weight', 'decoder.layers.0.trg_trg_att.v_layer.bias', 'decoder.layers.0.trg_trg_att.v_layer.weight', 'decoder.layers.0.x_layer_norm.bias', 'decoder.layers.0.x_layer_norm.weight', 'decoder.layers.1.dec_layer_norm.bias', 'decoder.layers.1.dec_layer_norm.weight', 'decoder.layers.1.feed_forward.layer_norm.bias', 'decoder.layers.1.feed_forward.layer_norm.weight', 'decoder.layers.1.feed_forward.pwff_layer.0.bias', 'decoder.layers.1.feed_forward.pwff_layer.0.weight', 'decoder.layers.1.feed_forward.pwff_layer.3.bias', 'decoder.layers.1.feed_forward.pwff_layer.3.weight', 'decoder.layers.1.src_trg_att.k_layer.bias', 'decoder.layers.1.src_trg_att.k_layer.weight', 'decoder.layers.1.src_trg_att.output_layer.bias', 'decoder.layers.1.src_trg_att.output_layer.weight', 'decoder.layers.1.src_trg_att.q_layer.bias', 'decoder.layers.1.src_trg_att.q_layer.weight', 'decoder.layers.1.src_trg_att.v_layer.bias', 'decoder.layers.1.src_trg_att.v_layer.weight', 'decoder.layers.1.trg_trg_att.k_layer.bias', 'decoder.layers.1.trg_trg_att.k_layer.weight', 'decoder.layers.1.trg_trg_att.output_layer.bias', 'decoder.layers.1.trg_trg_att.output_layer.weight', 'decoder.layers.1.trg_trg_att.q_layer.bias', 'decoder.layers.1.trg_trg_att.q_layer.weight', 'decoder.layers.1.trg_trg_att.v_layer.bias', 'decoder.layers.1.trg_trg_att.v_layer.weight', 'decoder.layers.1.x_layer_norm.bias', 'decoder.layers.1.x_layer_norm.weight', 'decoder.layers.2.dec_layer_norm.bias', 'decoder.layers.2.dec_layer_norm.weight', 'decoder.layers.2.feed_forward.layer_norm.bias', 'decoder.layers.2.feed_forward.layer_norm.weight', 'decoder.layers.2.feed_forward.pwff_layer.0.bias', 'decoder.layers.2.feed_forward.pwff_layer.0.weight', 'decoder.layers.2.feed_forward.pwff_layer.3.bias', 'decoder.layers.2.feed_forward.pwff_layer.3.weight', 'decoder.layers.2.src_trg_att.k_layer.bias', 'decoder.layers.2.src_trg_att.k_layer.weight', 'decoder.layers.2.src_trg_att.output_layer.bias', 'decoder.layers.2.src_trg_att.output_layer.weight', 'decoder.layers.2.src_trg_att.q_layer.bias', 'decoder.layers.2.src_trg_att.q_layer.weight', 'decoder.layers.2.src_trg_att.v_layer.bias', 'decoder.layers.2.src_trg_att.v_layer.weight', 'decoder.layers.2.trg_trg_att.k_layer.bias', 'decoder.layers.2.trg_trg_att.k_layer.weight', 'decoder.layers.2.trg_trg_att.output_layer.bias', 'decoder.layers.2.trg_trg_att.output_layer.weight', 'decoder.layers.2.trg_trg_att.q_layer.bias', 'decoder.layers.2.trg_trg_att.q_layer.weight', 'decoder.layers.2.trg_trg_att.v_layer.bias', 'decoder.layers.2.trg_trg_att.v_layer.weight', 'decoder.layers.2.x_layer_norm.bias', 'decoder.layers.2.x_layer_norm.weight', 'decoder.layers.3.dec_layer_norm.bias', 'decoder.layers.3.dec_layer_norm.weight', 'decoder.layers.3.feed_forward.layer_norm.bias', 'decoder.layers.3.feed_forward.layer_norm.weight', 'decoder.layers.3.feed_forward.pwff_layer.0.bias', 'decoder.layers.3.feed_forward.pwff_layer.0.weight', 'decoder.layers.3.feed_forward.pwff_layer.3.bias', 'decoder.layers.3.feed_forward.pwff_layer.3.weight', 'decoder.layers.3.src_trg_att.k_layer.bias', 'decoder.layers.3.src_trg_att.k_layer.weight', 'decoder.layers.3.src_trg_att.output_layer.bias', 'decoder.layers.3.src_trg_att.output_layer.weight', 'decoder.layers.3.src_trg_att.q_layer.bias', 'decoder.layers.3.src_trg_att.q_layer.weight', 'decoder.layers.3.src_trg_att.v_layer.bias', 'decoder.layers.3.src_trg_att.v_layer.weight', 'decoder.layers.3.trg_trg_att.k_layer.bias', 'decoder.layers.3.trg_trg_att.k_layer.weight', 'decoder.layers.3.trg_trg_att.output_layer.bias', 'decoder.layers.3.trg_trg_att.output_layer.weight', 'decoder.layers.3.trg_trg_att.q_layer.bias', 'decoder.layers.3.trg_trg_att.q_layer.weight', 'decoder.layers.3.trg_trg_att.v_layer.bias', 'decoder.layers.3.trg_trg_att.v_layer.weight', 'decoder.layers.3.x_layer_norm.bias', 'decoder.layers.3.x_layer_norm.weight', 'decoder.layers.4.dec_layer_norm.bias', 'decoder.layers.4.dec_layer_norm.weight', 'decoder.layers.4.feed_forward.layer_norm.bias', 'decoder.layers.4.feed_forward.layer_norm.weight', 'decoder.layers.4.feed_forward.pwff_layer.0.bias', 'decoder.layers.4.feed_forward.pwff_layer.0.weight', 'decoder.layers.4.feed_forward.pwff_layer.3.bias', 'decoder.layers.4.feed_forward.pwff_layer.3.weight', 'decoder.layers.4.src_trg_att.k_layer.bias', 'decoder.layers.4.src_trg_att.k_layer.weight', 'decoder.layers.4.src_trg_att.output_layer.bias', 'decoder.layers.4.src_trg_att.output_layer.weight', 'decoder.layers.4.src_trg_att.q_layer.bias', 'decoder.layers.4.src_trg_att.q_layer.weight', 'decoder.layers.4.src_trg_att.v_layer.bias', 'decoder.layers.4.src_trg_att.v_layer.weight', 'decoder.layers.4.trg_trg_att.k_layer.bias', 'decoder.layers.4.trg_trg_att.k_layer.weight', 'decoder.layers.4.trg_trg_att.output_layer.bias', 'decoder.layers.4.trg_trg_att.output_layer.weight', 'decoder.layers.4.trg_trg_att.q_layer.bias', 'decoder.layers.4.trg_trg_att.q_layer.weight', 'decoder.layers.4.trg_trg_att.v_layer.bias', 'decoder.layers.4.trg_trg_att.v_layer.weight', 'decoder.layers.4.x_layer_norm.bias', 'decoder.layers.4.x_layer_norm.weight', 'decoder.layers.5.dec_layer_norm.bias', 'decoder.layers.5.dec_layer_norm.weight', 'decoder.layers.5.feed_forward.layer_norm.bias', 'decoder.layers.5.feed_forward.layer_norm.weight', 'decoder.layers.5.feed_forward.pwff_layer.0.bias', 'decoder.layers.5.feed_forward.pwff_layer.0.weight', 'decoder.layers.5.feed_forward.pwff_layer.3.bias', 'decoder.layers.5.feed_forward.pwff_layer.3.weight', 'decoder.layers.5.src_trg_att.k_layer.bias', 'decoder.layers.5.src_trg_att.k_layer.weight', 'decoder.layers.5.src_trg_att.output_layer.bias', 'decoder.layers.5.src_trg_att.output_layer.weight', 'decoder.layers.5.src_trg_att.q_layer.bias', 'decoder.layers.5.src_trg_att.q_layer.weight', 'decoder.layers.5.src_trg_att.v_layer.bias', 'decoder.layers.5.src_trg_att.v_layer.weight', 'decoder.layers.5.trg_trg_att.k_layer.bias', 'decoder.layers.5.trg_trg_att.k_layer.weight', 'decoder.layers.5.trg_trg_att.output_layer.bias', 'decoder.layers.5.trg_trg_att.output_layer.weight', 'decoder.layers.5.trg_trg_att.q_layer.bias', 'decoder.layers.5.trg_trg_att.q_layer.weight', 'decoder.layers.5.trg_trg_att.v_layer.bias', 'decoder.layers.5.trg_trg_att.v_layer.weight', 'decoder.layers.5.x_layer_norm.bias', 'decoder.layers.5.x_layer_norm.weight', 'encoder.layer_norm.bias', 'encoder.layer_norm.weight', 'encoder.layers.0.feed_forward.layer_norm.bias', 'encoder.layers.0.feed_forward.layer_norm.weight', 'encoder.layers.0.feed_forward.pwff_layer.0.bias', 'encoder.layers.0.feed_forward.pwff_layer.0.weight', 'encoder.layers.0.feed_forward.pwff_layer.3.bias', 'encoder.layers.0.feed_forward.pwff_layer.3.weight', 'encoder.layers.0.layer_norm.bias', 'encoder.layers.0.layer_norm.weight', 'encoder.layers.0.src_src_att.k_layer.bias', 'encoder.layers.0.src_src_att.k_layer.weight', 'encoder.layers.0.src_src_att.output_layer.bias', 'encoder.layers.0.src_src_att.output_layer.weight', 'encoder.layers.0.src_src_att.q_layer.bias', 'encoder.layers.0.src_src_att.q_layer.weight', 'encoder.layers.0.src_src_att.v_layer.bias', 'encoder.layers.0.src_src_att.v_layer.weight', 'encoder.layers.1.feed_forward.layer_norm.bias', 'encoder.layers.1.feed_forward.layer_norm.weight', 'encoder.layers.1.feed_forward.pwff_layer.0.bias', 'encoder.layers.1.feed_forward.pwff_layer.0.weight', 'encoder.layers.1.feed_forward.pwff_layer.3.bias', 'encoder.layers.1.feed_forward.pwff_layer.3.weight', 'encoder.layers.1.layer_norm.bias', 'encoder.layers.1.layer_norm.weight', 'encoder.layers.1.src_src_att.k_layer.bias', 'encoder.layers.1.src_src_att.k_layer.weight', 'encoder.layers.1.src_src_att.output_layer.bias', 'encoder.layers.1.src_src_att.output_layer.weight', 'encoder.layers.1.src_src_att.q_layer.bias', 'encoder.layers.1.src_src_att.q_layer.weight', 'encoder.layers.1.src_src_att.v_layer.bias', 'encoder.layers.1.src_src_att.v_layer.weight', 'encoder.layers.2.feed_forward.layer_norm.bias', 'encoder.layers.2.feed_forward.layer_norm.weight', 'encoder.layers.2.feed_forward.pwff_layer.0.bias', 'encoder.layers.2.feed_forward.pwff_layer.0.weight', 'encoder.layers.2.feed_forward.pwff_layer.3.bias', 'encoder.layers.2.feed_forward.pwff_layer.3.weight', 'encoder.layers.2.layer_norm.bias', 'encoder.layers.2.layer_norm.weight', 'encoder.layers.2.src_src_att.k_layer.bias', 'encoder.layers.2.src_src_att.k_layer.weight', 'encoder.layers.2.src_src_att.output_layer.bias', 'encoder.layers.2.src_src_att.output_layer.weight', 'encoder.layers.2.src_src_att.q_layer.bias', 'encoder.layers.2.src_src_att.q_layer.weight', 'encoder.layers.2.src_src_att.v_layer.bias', 'encoder.layers.2.src_src_att.v_layer.weight', 'encoder.layers.3.feed_forward.layer_norm.bias', 'encoder.layers.3.feed_forward.layer_norm.weight', 'encoder.layers.3.feed_forward.pwff_layer.0.bias', 'encoder.layers.3.feed_forward.pwff_layer.0.weight', 'encoder.layers.3.feed_forward.pwff_layer.3.bias', 'encoder.layers.3.feed_forward.pwff_layer.3.weight', 'encoder.layers.3.layer_norm.bias', 'encoder.layers.3.layer_norm.weight', 'encoder.layers.3.src_src_att.k_layer.bias', 'encoder.layers.3.src_src_att.k_layer.weight', 'encoder.layers.3.src_src_att.output_layer.bias', 'encoder.layers.3.src_src_att.output_layer.weight', 'encoder.layers.3.src_src_att.q_layer.bias', 'encoder.layers.3.src_src_att.q_layer.weight', 'encoder.layers.3.src_src_att.v_layer.bias', 'encoder.layers.3.src_src_att.v_layer.weight', 'encoder.layers.4.feed_forward.layer_norm.bias', 'encoder.layers.4.feed_forward.layer_norm.weight', 'encoder.layers.4.feed_forward.pwff_layer.0.bias', 'encoder.layers.4.feed_forward.pwff_layer.0.weight', 'encoder.layers.4.feed_forward.pwff_layer.3.bias', 'encoder.layers.4.feed_forward.pwff_layer.3.weight', 'encoder.layers.4.layer_norm.bias', 'encoder.layers.4.layer_norm.weight', 'encoder.layers.4.src_src_att.k_layer.bias', 'encoder.layers.4.src_src_att.k_layer.weight', 'encoder.layers.4.src_src_att.output_layer.bias', 'encoder.layers.4.src_src_att.output_layer.weight', 'encoder.layers.4.src_src_att.q_layer.bias', 'encoder.layers.4.src_src_att.q_layer.weight', 'encoder.layers.4.src_src_att.v_layer.bias', 'encoder.layers.4.src_src_att.v_layer.weight', 'encoder.layers.5.feed_forward.layer_norm.bias', 'encoder.layers.5.feed_forward.layer_norm.weight', 'encoder.layers.5.feed_forward.pwff_layer.0.bias', 'encoder.layers.5.feed_forward.pwff_layer.0.weight', 'encoder.layers.5.feed_forward.pwff_layer.3.bias', 'encoder.layers.5.feed_forward.pwff_layer.3.weight', 'encoder.layers.5.layer_norm.bias', 'encoder.layers.5.layer_norm.weight', 'encoder.layers.5.src_src_att.k_layer.bias', 'encoder.layers.5.src_src_att.k_layer.weight', 'encoder.layers.5.src_src_att.output_layer.bias', 'encoder.layers.5.src_src_att.output_layer.weight', 'encoder.layers.5.src_src_att.q_layer.bias', 'encoder.layers.5.src_src_att.q_layer.weight', 'encoder.layers.5.src_src_att.v_layer.bias', 'encoder.layers.5.src_src_att.v_layer.weight', 'src_embed.lut.weight', 'trg_embed.lut.weight']
+2020-05-12 16:47:37,578 cfg.name                           : transformer_pe_3
+2020-05-12 16:47:37,579 cfg.data.src                       : de
+2020-05-12 16:47:37,579 cfg.data.trg                       : en
+2020-05-12 16:47:37,579 cfg.data.train                     : postediting/data/multi30k/train.lc.norm.tok
+2020-05-12 16:47:37,579 cfg.data.dev                       : postediting/data/multi30k/dev_2017_flickr.lc.norm.tok
+2020-05-12 16:47:37,580 cfg.data.test                      : postediting/data/multi30k/test_2017_mscoco.lc.norm.tok
+2020-05-12 16:47:37,580 cfg.data.level                     : word
+2020-05-12 16:47:37,580 cfg.data.lowercase                 : False
+2020-05-12 16:47:37,580 cfg.data.max_sent_length           : 100
+2020-05-12 16:47:37,580 cfg.data.src_voc_min_freq          : 0
+2020-05-12 16:47:37,580 cfg.data.trg_voc_min_freq          : 0
+2020-05-12 16:47:37,581 cfg.data.src_vocab                 : models/sy_transformer_copy_1/src_vocab.txt
+2020-05-12 16:47:37,581 cfg.data.trg_vocab                 : models/sy_transformer_copy_1/trg_vocab.txt
+2020-05-12 16:47:37,581 cfg.testing.beam_size              : 5
+2020-05-12 16:47:37,581 cfg.testing.alpha                  : 1.0
+2020-05-12 16:47:37,581 cfg.training.reset_best_ckpt       : True
+2020-05-12 16:47:37,581 cfg.training.reset_scheduler       : True
+2020-05-12 16:47:37,581 cfg.training.reset_optimizer       : True
+2020-05-12 16:47:37,582 cfg.training.random_seed           : 42
+2020-05-12 16:47:37,582 cfg.training.optimizer             : adam
+2020-05-12 16:47:37,582 cfg.training.normalization         : tokens
+2020-05-12 16:47:37,582 cfg.training.adam_betas            : [0.9, 0.999]
+2020-05-12 16:47:37,582 cfg.training.scheduling            : plateau
+2020-05-12 16:47:37,582 cfg.training.patience              : 8
+2020-05-12 16:47:37,583 cfg.training.decrease_factor       : 0.7
+2020-05-12 16:47:37,583 cfg.training.loss                  : crossentropy
+2020-05-12 16:47:37,583 cfg.training.learning_rate         : 0.0002
+2020-05-12 16:47:37,583 cfg.training.learning_rate_min     : 1e-08
+2020-05-12 16:47:37,583 cfg.training.weight_decay          : 0.0
+2020-05-12 16:47:37,583 cfg.training.batch_size            : 4096
+2020-05-12 16:47:37,584 cfg.training.batch_type            : token
+2020-05-12 16:47:37,584 cfg.training.eval_batch_size       : 3600
+2020-05-12 16:47:37,584 cfg.training.eval_batch_type       : token
+2020-05-12 16:47:37,584 cfg.training.batch_multiplier      : 1
+2020-05-12 16:47:37,584 cfg.training.early_stopping_metric : ppl
+2020-05-12 16:47:37,584 cfg.training.epochs                : 100
+2020-05-12 16:47:37,585 cfg.training.validation_freq       : 4000
+2020-05-12 16:47:37,585 cfg.training.logging_freq          : 200
+2020-05-12 16:47:37,585 cfg.training.eval_metric           : token_accuracy
+2020-05-12 16:47:37,585 cfg.training.model_dir             : models/sy_transformer_wmt17_ende_2
+2020-05-12 16:47:37,585 cfg.training.overwrite             : True
+2020-05-12 16:47:37,585 cfg.training.shuffle               : True
+2020-05-12 16:47:37,586 cfg.training.use_cuda              : True
+2020-05-12 16:47:37,586 cfg.training.max_output_length     : 100
+2020-05-12 16:47:37,586 cfg.training.print_valid_sents     : [0, 1, 2]
+2020-05-12 16:47:37,586 cfg.training.keep_last_ckpts       : 3
+2020-05-12 16:47:37,586 cfg.model.initializer              : xavier
+2020-05-12 16:47:37,586 cfg.model.bias_initializer         : zeros
+2020-05-12 16:47:37,586 cfg.model.init_gain                : 1.0
+2020-05-12 16:47:37,587 cfg.model.embed_initializer        : xavier
+2020-05-12 16:47:37,587 cfg.model.embed_init_gain          : 1.0
+2020-05-12 16:47:37,587 cfg.model.tied_embeddings          : False
+2020-05-12 16:47:37,587 cfg.model.tied_softmax             : True
+2020-05-12 16:47:37,587 cfg.model.encoder.type             : transformer
+2020-05-12 16:47:37,587 cfg.model.encoder.num_layers       : 6
+2020-05-12 16:47:37,589 cfg.model.encoder.num_heads        : 8
+2020-05-12 16:47:37,589 cfg.model.encoder.embeddings.embedding_dim : 512
+2020-05-12 16:47:37,589 cfg.model.encoder.embeddings.scale : True
+2020-05-12 16:47:37,589 cfg.model.encoder.embeddings.dropout : 0.0
+2020-05-12 16:47:37,589 cfg.model.encoder.hidden_size      : 512
+2020-05-12 16:47:37,589 cfg.model.encoder.ff_size          : 2048
+2020-05-12 16:47:37,589 cfg.model.encoder.dropout          : 0.1
+2020-05-12 16:47:37,590 cfg.model.decoder.type             : transformer
+2020-05-12 16:47:37,590 cfg.model.decoder.num_layers       : 6
+2020-05-12 16:47:37,590 cfg.model.decoder.num_heads        : 8
+2020-05-12 16:47:37,590 cfg.model.decoder.embeddings.embedding_dim : 512
+2020-05-12 16:47:37,591 cfg.model.decoder.embeddings.scale : True
+2020-05-12 16:47:37,591 cfg.model.decoder.embeddings.dropout : 0.0
+2020-05-12 16:47:37,591 cfg.model.decoder.hidden_size      : 512
+2020-05-12 16:47:37,591 cfg.model.decoder.ff_size          : 2048
+2020-05-12 16:47:37,591 cfg.model.decoder.dropout          : 0.1
+2020-05-12 16:47:37,592 Data set sizes: 
+	train 29000,
+	valid 1000,
+	test 461
+2020-05-12 16:47:37,592 First training example:
+	[SRC] zwei junge weiﬂe m‰nner sind im freien in der n‰he vieler b¸sche .
+	[TRG] two young , white males are outside near many bushes .
+2020-05-12 16:47:37,592 First 10 words (src): (0) <unk> (1) <pad> (2) <s> (3) </s> (4) . (5) ein (6) einem (7) in (8) eine (9) ,
+2020-05-12 16:47:37,592 First 10 words (trg): (0) <unk> (1) <pad> (2) <s> (3) </s> (4) a (5) . (6) in (7) the (8) on (9) man
+2020-05-12 16:47:37,592 Number of Src words (types): 18726
+2020-05-12 16:47:37,593 Number of Trg words (types): 10214
+2020-05-12 16:47:37,593 Model(
+	encoder=TransformerEncoder(num_layers=6, num_heads=8),
+	decoder=TransformerDecoder(num_layers=6, num_heads=8),
+	src_embed=Embeddings(embedding_dim=512, vocab_size=18726),
+	trg_embed=Embeddings(embedding_dim=512, vocab_size=10214))
+2020-05-12 16:47:37,620 EPOCH 1
+2020-05-12 16:48:23,262 Epoch   1: total training loss 813.29
+2020-05-12 16:48:23,263 EPOCH 2
+2020-05-12 16:48:35,873 Epoch   2 Step:      200 Batch Loss:     4.598033 Tokens per Sec:     8992, Lr: 0.000200
+2020-05-12 16:49:08,623 Epoch   2: total training loss 612.04
+2020-05-12 16:49:08,624 EPOCH 3
+2020-05-12 16:49:34,244 Epoch   3 Step:      400 Batch Loss:     3.415815 Tokens per Sec:     8815, Lr: 0.000200
+2020-05-12 16:49:54,817 Epoch   3: total training loss 500.47
+2020-05-12 16:49:54,818 EPOCH 4
+2020-05-12 16:50:32,969 Epoch   4 Step:      600 Batch Loss:     2.135451 Tokens per Sec:     8846, Lr: 0.000200
+2020-05-12 16:50:40,934 Epoch   4: total training loss 406.41
+2020-05-12 16:50:40,935 EPOCH 5
+2020-05-12 16:51:26,633 Epoch   5: total training loss 346.10
+2020-05-12 16:51:26,633 EPOCH 6
+2020-05-12 16:51:30,978 Epoch   6 Step:      800 Batch Loss:     1.648884 Tokens per Sec:     9205, Lr: 0.000200
+2020-05-12 16:52:12,326 Epoch   6: total training loss 291.00
+2020-05-12 16:52:12,327 EPOCH 7
+2020-05-12 16:52:29,126 Epoch   7 Step:     1000 Batch Loss:     1.366336 Tokens per Sec:     8791, Lr: 0.000200
+2020-05-12 16:52:58,261 Epoch   7: total training loss 254.57
+2020-05-12 16:52:58,262 EPOCH 8
+2020-05-12 16:53:27,074 Epoch   8 Step:     1200 Batch Loss:     1.400294 Tokens per Sec:     8927, Lr: 0.000200
+2020-05-12 16:53:43,998 Epoch   8: total training loss 222.63
+2020-05-12 16:53:44,000 EPOCH 9
+2020-05-12 16:54:25,529 Epoch   9 Step:     1400 Batch Loss:     1.274125 Tokens per Sec:     8868, Lr: 0.000200
+2020-05-12 16:54:30,058 Epoch   9: total training loss 197.62
+2020-05-12 16:54:30,059 EPOCH 10
+2020-05-12 16:55:15,554 Epoch  10: total training loss 175.73
+2020-05-12 16:55:15,555 EPOCH 11
+2020-05-12 16:55:23,922 Epoch  11 Step:     1600 Batch Loss:     0.964637 Tokens per Sec:     8742, Lr: 0.000200
+2020-05-12 16:56:01,684 Epoch  11: total training loss 156.07
+2020-05-12 16:56:01,685 EPOCH 12
+2020-05-12 16:56:22,758 Epoch  12 Step:     1800 Batch Loss:     0.824700 Tokens per Sec:     8814, Lr: 0.000200
+2020-05-12 16:56:47,817 Epoch  12: total training loss 137.44
+2020-05-12 16:56:47,818 EPOCH 13
+2020-05-12 16:57:21,888 Epoch  13 Step:     2000 Batch Loss:     0.722816 Tokens per Sec:     8855, Lr: 0.000200
+2020-05-12 16:57:33,905 Epoch  13: total training loss 122.26
+2020-05-12 16:57:33,905 EPOCH 14
+2020-05-12 16:58:19,261 Epoch  14: total training loss 110.88
+2020-05-12 16:58:19,261 EPOCH 15
+2020-05-12 16:58:19,939 Epoch  15 Step:     2200 Batch Loss:     0.674060 Tokens per Sec:     7813, Lr: 0.000200
+2020-05-12 16:59:05,194 Epoch  15: total training loss 103.60
+2020-05-12 16:59:05,195 EPOCH 16
+2020-05-12 16:59:18,116 Epoch  16 Step:     2400 Batch Loss:     0.522417 Tokens per Sec:     9002, Lr: 0.000200
+2020-05-12 16:59:50,794 Epoch  16: total training loss 87.89
+2020-05-12 16:59:50,794 EPOCH 17
+2020-05-12 17:00:16,329 Epoch  17 Step:     2600 Batch Loss:     0.459145 Tokens per Sec:     9056, Lr: 0.000200
+2020-05-12 17:00:36,142 Epoch  17: total training loss 78.04
+2020-05-12 17:00:36,143 EPOCH 18
+2020-05-12 17:01:14,523 Epoch  18 Step:     2800 Batch Loss:     0.592368 Tokens per Sec:     8823, Lr: 0.000200
+2020-05-12 17:01:22,042 Epoch  18: total training loss 79.37
+2020-05-12 17:01:22,042 EPOCH 19
+2020-05-12 17:02:07,605 Epoch  19: total training loss 65.10
+2020-05-12 17:02:07,606 EPOCH 20
+2020-05-12 17:02:12,498 Epoch  20 Step:     3000 Batch Loss:     0.304623 Tokens per Sec:     8677, Lr: 0.000200
+2020-05-12 17:02:53,233 Epoch  20: total training loss 55.39
+2020-05-12 17:02:53,234 EPOCH 21
+2020-05-12 17:03:10,230 Epoch  21 Step:     3200 Batch Loss:     0.318026 Tokens per Sec:     8942, Lr: 0.000200
+2020-05-12 17:03:38,853 Epoch  21: total training loss 56.69
+2020-05-12 17:03:38,853 EPOCH 22
+2020-05-12 17:04:07,845 Epoch  22 Step:     3400 Batch Loss:     0.319804 Tokens per Sec:     8955, Lr: 0.000200
+2020-05-12 17:04:23,801 Epoch  22: total training loss 52.24
+2020-05-12 17:04:23,801 EPOCH 23
+2020-05-12 17:05:05,631 Epoch  23 Step:     3600 Batch Loss:     0.263749 Tokens per Sec:     8900, Lr: 0.000200
+2020-05-12 17:05:09,540 Epoch  23: total training loss 41.97
+2020-05-12 17:05:09,541 EPOCH 24
+2020-05-12 17:05:55,168 Epoch  24: total training loss 40.14
+2020-05-12 17:05:55,169 EPOCH 25
+2020-05-12 17:06:03,183 Epoch  25 Step:     3800 Batch Loss:     0.182058 Tokens per Sec:     9255, Lr: 0.000200
+2020-05-12 17:06:40,154 Epoch  25: total training loss 32.00
+2020-05-12 17:06:40,155 EPOCH 26
+2020-05-12 17:07:01,174 Epoch  26 Step:     4000 Batch Loss:     0.182259 Tokens per Sec:     8909, Lr: 0.000200
+2020-05-12 17:07:11,228 Hooray! New best validation result [ppl]!
+2020-05-12 17:07:11,229 Saving new checkpoint.
+2020-05-12 17:07:12,777 Example #0
+2020-05-12 17:07:12,778 	Raw source:     ['ein', 'schlanker', 'gelblicher', 'hund', 'beim', 'absolvieren', 'eines', 'hindernislaufs', ',', 'der', 'in', 'einem', 'bereich', 'mit', 'nacktem', 'erdboden', 'aufgebaut', 'ist']
+2020-05-12 17:07:12,778 	Raw hypothesis: ['a', 'tanned', 'dog', 'jousting', 'with', 'a', 'forested', 'site', ',', 'moving', 'up', 'in', 'a', 'area', 'filled', 'area', 'with', 'dirt', '.']
+2020-05-12 17:07:12,778 	Source:     ein schlanker gelblicher hund beim absolvieren eines hindernislaufs , der in einem bereich mit nacktem erdboden aufgebaut ist
+2020-05-12 17:07:12,779 	Reference:  a sleek yellow dog mid run on a dirt area on an obstacle course
+2020-05-12 17:07:12,779 	Hypothesis: a tanned dog jousting with a forested site , moving up in a area filled area with dirt .
+2020-05-12 17:07:12,779 Example #1
+2020-05-12 17:07:12,780 	Raw source:     ['ein', 'schwarz-weiﬂ-foto', 'eines', 'hundes', ',', 'der', 'nach', 'vorn', 'blickt', ',', 'mit', 'einem', 'hintergrund', 'aus', 'schildern', 'in', 'einer', 'asiatischen', 'sprache', '.']
+2020-05-12 17:07:12,780 	Raw hypothesis: ['a', 'contestant', 'with', 'a', 'dog', 'looking', 'over', ',', 'looking', 'in', 'a', 'background', 'of', 'signs', 'with', 'a', 'girl', 'in', 'an', 'asian', 'appearing', '.']
+2020-05-12 17:07:12,780 	Source:     ein schwarz-weiﬂ-foto eines hundes , der nach vorn blickt , mit einem hintergrund aus schildern in einer asiatischen sprache .
+2020-05-12 17:07:12,780 	Reference:  a black and white photo of a dog staring ahead with a background of signs written in asian language characters .
+2020-05-12 17:07:12,781 	Hypothesis: a contestant with a dog looking over , looking in a background of signs with a girl in an asian appearing .
+2020-05-12 17:07:12,781 Example #2
+2020-05-12 17:07:12,781 	Raw source:     ['eine', 'luftaufnahme', 'mit', 'braun', 'werdenden', 'b‰umen', ',', 'einem', 'schlossartigen', 'geb‰ude', ',', 'das', 'darin', 'zu', 'erkennen', 'ist', ',', 'und', 'einer', 'berglandschaft', 'am', 'horizont', '.']
+2020-05-12 17:07:12,781 	Raw hypothesis: ['a', 'pirate', 'scene', 'with', 'brown', 'planes', ',', 'directing', 'trees', ',', 'one', 'driver', 'is', 'shown', 'in', 'the', 'horizon', ',', 'with', 'a', 'mountainous', 'building', '.']
+2020-05-12 17:07:12,781 	Source:     eine luftaufnahme mit braun werdenden b‰umen , einem schlossartigen geb‰ude , das darin zu erkennen ist , und einer berglandschaft am horizont .
+2020-05-12 17:07:12,782 	Reference:  an aerial landscape photo of browning grasses and a castle-like structure peaking through and a mountain landscape in the horizon .
+2020-05-12 17:07:12,782 	Hypothesis: a pirate scene with brown planes , directing trees , one driver is shown in the horizon , with a mountainous building .
+2020-05-12 17:07:12,782 Validation result (greedy) at epoch  26, step     4000: token_accuracy:   6.22, loss: 38782.6602, ppl:  22.9588, duration: 11.6068s
+2020-05-12 17:07:37,404 Epoch  26: total training loss 27.28
+2020-05-12 17:07:37,404 EPOCH 27
+2020-05-12 17:08:11,296 Epoch  27 Step:     4200 Batch Loss:     0.182109 Tokens per Sec:     8890, Lr: 0.000200
+2020-05-12 17:08:23,023 Epoch  27: total training loss 24.88
+2020-05-12 17:08:23,024 EPOCH 28
+2020-05-12 17:09:08,701 Epoch  28: total training loss 23.40
+2020-05-12 17:09:08,702 EPOCH 29
+2020-05-12 17:09:09,364 Epoch  29 Step:     4400 Batch Loss:     0.140343 Tokens per Sec:     8471, Lr: 0.000200
+2020-05-12 17:09:54,022 Epoch  29: total training loss 22.37
+2020-05-12 17:09:54,023 EPOCH 30
+2020-05-12 17:10:06,879 Epoch  30 Step:     4600 Batch Loss:     0.162018 Tokens per Sec:     8924, Lr: 0.000200
+2020-05-12 17:10:39,805 Epoch  30: total training loss 24.21
+2020-05-12 17:10:39,806 EPOCH 31
+2020-05-12 17:11:04,835 Epoch  31 Step:     4800 Batch Loss:     0.118948 Tokens per Sec:     8874, Lr: 0.000200
+2020-05-12 17:11:25,518 Epoch  31: total training loss 21.07
+2020-05-12 17:11:25,518 EPOCH 32
+2020-05-12 17:12:03,190 Epoch  32 Step:     5000 Batch Loss:     0.112162 Tokens per Sec:     8917, Lr: 0.000200
+2020-05-12 17:12:11,214 Epoch  32: total training loss 18.91
+2020-05-12 17:12:11,215 EPOCH 33
+2020-05-12 17:12:56,601 Epoch  33: total training loss 15.93
+2020-05-12 17:12:56,602 EPOCH 34
+2020-05-12 17:13:01,248 Epoch  34 Step:     5200 Batch Loss:     0.087319 Tokens per Sec:     8823, Lr: 0.000200
+2020-05-12 17:13:41,942 Epoch  34: total training loss 14.64
+2020-05-12 17:13:41,943 EPOCH 35
+2020-05-12 17:13:59,153 Epoch  35 Step:     5400 Batch Loss:     0.122970 Tokens per Sec:     8870, Lr: 0.000200
+2020-05-12 17:14:27,703 Epoch  35: total training loss 17.16
+2020-05-12 17:14:27,703 EPOCH 36
+2020-05-12 17:14:56,627 Epoch  36 Step:     5600 Batch Loss:     0.091174 Tokens per Sec:     9046, Lr: 0.000200
+2020-05-12 17:15:12,993 Epoch  36: total training loss 15.19
+2020-05-12 17:15:12,995 EPOCH 37
+2020-05-12 17:15:54,176 Epoch  37 Step:     5800 Batch Loss:     0.076708 Tokens per Sec:     8973, Lr: 0.000200
+2020-05-12 17:15:58,537 Epoch  37: total training loss 14.86
+2020-05-12 17:15:58,538 EPOCH 38
+2020-05-12 17:16:43,828 Epoch  38: total training loss 13.97
+2020-05-12 17:16:43,829 EPOCH 39
+2020-05-12 17:16:52,377 Epoch  39 Step:     6000 Batch Loss:     0.057557 Tokens per Sec:     8883, Lr: 0.000200
+2020-05-12 17:17:29,781 Epoch  39: total training loss 11.22
+2020-05-12 17:17:29,782 EPOCH 40
+2020-05-12 17:17:50,177 Epoch  40 Step:     6200 Batch Loss:     0.094867 Tokens per Sec:     8985, Lr: 0.000200
+2020-05-12 17:18:15,514 Epoch  40: total training loss 12.09
+2020-05-12 17:18:15,515 EPOCH 41
+2020-05-12 17:18:48,306 Epoch  41 Step:     6400 Batch Loss:     0.060281 Tokens per Sec:     9035, Lr: 0.000200
+2020-05-12 17:19:00,998 Epoch  41: total training loss 12.12
+2020-05-12 17:19:00,999 EPOCH 42
+2020-05-12 17:19:46,993 Epoch  42 Step:     6600 Batch Loss:     0.062274 Tokens per Sec:     8839, Lr: 0.000200
+2020-05-12 17:19:46,994 Epoch  42: total training loss 11.23
+2020-05-12 17:19:46,994 EPOCH 43
+2020-05-12 17:20:32,832 Epoch  43: total training loss 9.95
+2020-05-12 17:20:32,833 EPOCH 44
+2020-05-12 17:20:45,267 Epoch  44 Step:     6800 Batch Loss:     0.050078 Tokens per Sec:     8858, Lr: 0.000200
+2020-05-12 17:21:18,374 Epoch  44: total training loss 8.93
+2020-05-12 17:21:18,376 EPOCH 45
+2020-05-12 17:21:43,273 Epoch  45 Step:     7000 Batch Loss:     0.060779 Tokens per Sec:     8987, Lr: 0.000200
+2020-05-12 17:22:03,589 Epoch  45: total training loss 9.52
+2020-05-12 17:22:03,589 EPOCH 46
+2020-05-12 17:22:41,388 Epoch  46 Step:     7200 Batch Loss:     0.042257 Tokens per Sec:     8987, Lr: 0.000200
+2020-05-12 17:22:48,834 Epoch  46: total training loss 8.42
+2020-05-12 17:22:48,834 EPOCH 47
+2020-05-12 17:23:35,056 Epoch  47: total training loss 9.75
+2020-05-12 17:23:35,057 EPOCH 48
+2020-05-12 17:23:39,742 Epoch  48 Step:     7400 Batch Loss:     0.041201 Tokens per Sec:     8992, Lr: 0.000200
+2020-05-12 17:24:20,612 Epoch  48: total training loss 8.59
+2020-05-12 17:24:20,613 EPOCH 49
+2020-05-12 17:24:37,952 Epoch  49 Step:     7600 Batch Loss:     0.053450 Tokens per Sec:     9036, Lr: 0.000200
+2020-05-12 17:25:06,085 Epoch  49: total training loss 7.83
+2020-05-12 17:25:06,086 EPOCH 50
+2020-05-12 17:25:36,083 Epoch  50 Step:     7800 Batch Loss:     0.051270 Tokens per Sec:     8969, Lr: 0.000200
+2020-05-12 17:25:51,834 Epoch  50: total training loss 7.77
+2020-05-12 17:25:51,835 EPOCH 51
+2020-05-12 17:26:34,245 Epoch  51 Step:     8000 Batch Loss:     0.047240 Tokens per Sec:     8873, Lr: 0.000200
+2020-05-12 17:26:43,563 Example #0
+2020-05-12 17:26:43,564 	Raw source:     ['ein', 'schlanker', 'gelblicher', 'hund', 'beim', 'absolvieren', 'eines', 'hindernislaufs', ',', 'der', 'in', 'einem', 'bereich', 'mit', 'nacktem', 'erdboden', 'aufgebaut', 'ist']
+2020-05-12 17:26:43,564 	Raw hypothesis: ['a', 'tanned', 'dog', 'is', 'jousting', 'with', 'a', 'firetruck', 'hydrant', 'in', 'a', 'area', 'covered', 'with', 'parking', 'leaves', '.']
+2020-05-12 17:26:43,564 	Source:     ein schlanker gelblicher hund beim absolvieren eines hindernislaufs , der in einem bereich mit nacktem erdboden aufgebaut ist
+2020-05-12 17:26:43,565 	Reference:  a sleek yellow dog mid run on a dirt area on an obstacle course
+2020-05-12 17:26:43,565 	Hypothesis: a tanned dog is jousting with a firetruck hydrant in a area covered with parking leaves .
+2020-05-12 17:26:43,565 Example #1
+2020-05-12 17:26:43,566 	Raw source:     ['ein', 'schwarz-weiﬂ-foto', 'eines', 'hundes', ',', 'der', 'nach', 'vorn', 'blickt', ',', 'mit', 'einem', 'hintergrund', 'aus', 'schildern', 'in', 'einer', 'asiatischen', 'sprache', '.']
+2020-05-12 17:26:43,566 	Raw hypothesis: ['a', 'tri-colored', 'scene', 'with', 'people', 'looking', 'forward', 'while', 'a', 'girl', 'in', 'an', 'asian', 'show', 'in', 'an', 'asian', 'woman', 'in', 'an', 'asian', '.']
+2020-05-12 17:26:43,566 	Source:     ein schwarz-weiﬂ-foto eines hundes , der nach vorn blickt , mit einem hintergrund aus schildern in einer asiatischen sprache .
+2020-05-12 17:26:43,566 	Reference:  a black and white photo of a dog staring ahead with a background of signs written in asian language characters .
+2020-05-12 17:26:43,567 	Hypothesis: a tri-colored scene with people looking forward while a girl in an asian show in an asian woman in an asian .
+2020-05-12 17:26:43,567 Example #2
+2020-05-12 17:26:43,567 	Raw source:     ['eine', 'luftaufnahme', 'mit', 'braun', 'werdenden', 'b‰umen', ',', 'einem', 'schlossartigen', 'geb‰ude', ',', 'das', 'darin', 'zu', 'erkennen', 'ist', ',', 'und', 'einer', 'berglandschaft', 'am', 'horizont', '.']
+2020-05-12 17:26:43,568 	Raw hypothesis: ['a', 'bagpipe', 'scene', 'with', 'brown', 'planes', ',', 'kilts', ',', 'there', 'is', 'a', 'firetruck', 'so', 'that', 'it', 'will', 'lead', 'and', 'a', 'mountainous', 'covered', 'in', 'the', 'horizon', '.']
+2020-05-12 17:26:43,568 	Source:     eine luftaufnahme mit braun werdenden b‰umen , einem schlossartigen geb‰ude , das darin zu erkennen ist , und einer berglandschaft am horizont .
+2020-05-12 17:26:43,568 	Reference:  an aerial landscape photo of browning grasses and a castle-like structure peaking through and a mountain landscape in the horizon .
+2020-05-12 17:26:43,568 	Hypothesis: a bagpipe scene with brown planes , kilts , there is a firetruck so that it will lead and a mountainous covered in the horizon .
+2020-05-12 17:26:43,568 Validation result (greedy) at epoch  51, step     8000: token_accuracy:   6.20, loss: 49468.6523, ppl:  54.4424, duration: 9.3212s
+2020-05-12 17:26:47,066 Epoch  51: total training loss 7.72
+2020-05-12 17:26:47,067 EPOCH 52
+2020-05-12 17:27:32,633 Epoch  52: total training loss 7.87
+2020-05-12 17:27:32,634 EPOCH 53
+2020-05-12 17:27:41,937 Epoch  53 Step:     8200 Batch Loss:     0.031028 Tokens per Sec:     9101, Lr: 0.000200
+2020-05-12 17:28:18,568 Epoch  53: total training loss 7.53
+2020-05-12 17:28:18,569 EPOCH 54
+2020-05-12 17:28:40,569 Epoch  54 Step:     8400 Batch Loss:     0.050287 Tokens per Sec:     8851, Lr: 0.000200
+2020-05-12 17:29:04,601 Epoch  54: total training loss 8.47
+2020-05-12 17:29:04,601 EPOCH 55
+2020-05-12 17:29:38,857 Epoch  55 Step:     8600 Batch Loss:     0.039329 Tokens per Sec:     8961, Lr: 0.000200
+2020-05-12 17:29:50,457 Epoch  55: total training loss 7.87
+2020-05-12 17:29:50,458 EPOCH 56
+2020-05-12 17:30:36,465 Epoch  56: total training loss 7.99
+2020-05-12 17:30:36,465 EPOCH 57
+2020-05-12 17:30:36,830 Epoch  57 Step:     8800 Batch Loss:     0.044872 Tokens per Sec:     7456, Lr: 0.000200
+2020-05-12 17:31:22,209 Epoch  57: total training loss 7.70
+2020-05-12 17:31:22,210 EPOCH 58
+2020-05-12 17:31:35,072 Epoch  58 Step:     9000 Batch Loss:     0.026988 Tokens per Sec:     8940, Lr: 0.000200
+2020-05-12 17:32:07,882 Epoch  58: total training loss 6.47
+2020-05-12 17:32:07,883 EPOCH 59
+2020-05-12 17:32:33,107 Epoch  59 Step:     9200 Batch Loss:     0.042642 Tokens per Sec:     8986, Lr: 0.000200
+2020-05-12 17:32:53,124 Epoch  59: total training loss 7.02
+2020-05-12 17:32:53,126 EPOCH 60
+2020-05-12 17:33:31,058 Epoch  60 Step:     9400 Batch Loss:     0.037522 Tokens per Sec:     9006, Lr: 0.000200
+2020-05-12 17:33:38,577 Epoch  60: total training loss 6.06
+2020-05-12 17:33:38,578 EPOCH 61
+2020-05-12 17:34:24,184 Epoch  61: total training loss 5.93
+2020-05-12 17:34:24,186 EPOCH 62
+2020-05-12 17:34:29,132 Epoch  62 Step:     9600 Batch Loss:     0.092202 Tokens per Sec:     8646, Lr: 0.000200
+2020-05-12 17:35:10,066 Epoch  62: total training loss 5.67
+2020-05-12 17:35:10,067 EPOCH 63
+2020-05-12 17:35:27,895 Epoch  63 Step:     9800 Batch Loss:     0.033127 Tokens per Sec:     8860, Lr: 0.000200
+2020-05-12 17:35:55,654 Epoch  63: total training loss 6.89
+2020-05-12 17:35:55,655 EPOCH 64
+2020-05-12 17:36:26,101 Epoch  64 Step:    10000 Batch Loss:     0.035540 Tokens per Sec:     8889, Lr: 0.000200
+2020-05-12 17:36:41,638 Epoch  64: total training loss 6.77
+2020-05-12 17:36:41,638 EPOCH 65
+2020-05-12 17:37:25,289 Epoch  65 Step:    10200 Batch Loss:     0.060344 Tokens per Sec:     8769, Lr: 0.000200
+2020-05-12 17:37:27,897 Epoch  65: total training loss 7.46
+2020-05-12 17:37:27,898 EPOCH 66
+2020-05-12 17:38:13,990 Epoch  66: total training loss 6.02
+2020-05-12 17:38:13,991 EPOCH 67
+2020-05-12 17:38:23,665 Epoch  67 Step:    10400 Batch Loss:     0.032951 Tokens per Sec:     9233, Lr: 0.000200
+2020-05-12 17:38:59,195 Epoch  67: total training loss 5.80
+2020-05-12 17:38:59,195 EPOCH 68
+2020-05-12 17:39:21,969 Epoch  68 Step:    10600 Batch Loss:     0.022789 Tokens per Sec:     8931, Lr: 0.000200
+2020-05-12 17:39:44,965 Epoch  68: total training loss 5.33
+2020-05-12 17:39:44,966 EPOCH 69
+2020-05-12 17:40:20,429 Epoch  69 Step:    10800 Batch Loss:     0.038213 Tokens per Sec:     8911, Lr: 0.000200
+2020-05-12 17:40:30,593 Epoch  69: total training loss 5.17
+2020-05-12 17:40:30,594 EPOCH 70
+2020-05-12 17:41:16,664 Epoch  70: total training loss 4.57
+2020-05-12 17:41:16,665 EPOCH 71
+2020-05-12 17:41:19,207 Epoch  71 Step:    11000 Batch Loss:     0.062021 Tokens per Sec:     8441, Lr: 0.000200
+2020-05-12 17:42:02,399 Epoch  71: total training loss 6.60
+2020-05-12 17:42:02,400 EPOCH 72
+2020-05-12 17:42:17,984 Epoch  72 Step:    11200 Batch Loss:     0.036661 Tokens per Sec:     8727, Lr: 0.000200
+2020-05-12 17:42:47,978 Epoch  72: total training loss 4.67
+2020-05-12 17:42:47,979 EPOCH 73
+2020-05-12 17:43:15,707 Epoch  73 Step:    11400 Batch Loss:     0.025583 Tokens per Sec:     8959, Lr: 0.000200
+2020-05-12 17:43:33,507 Epoch  73: total training loss 4.65
+2020-05-12 17:43:33,507 EPOCH 74
+2020-05-12 17:44:14,538 Epoch  74 Step:    11600 Batch Loss:     0.042050 Tokens per Sec:     8737, Lr: 0.000200
+2020-05-12 17:44:20,081 Epoch  74: total training loss 5.06
+2020-05-12 17:44:20,082 EPOCH 75
+2020-05-12 17:45:06,061 Epoch  75: total training loss 5.78
+2020-05-12 17:45:06,062 EPOCH 76
+2020-05-12 17:45:12,927 Epoch  76 Step:    11800 Batch Loss:     0.025585 Tokens per Sec:     9019, Lr: 0.000200
+2020-05-12 17:45:51,698 Epoch  76: total training loss 6.53
+2020-05-12 17:45:51,699 EPOCH 77
+2020-05-12 17:46:10,593 Epoch  77 Step:    12000 Batch Loss:     0.043491 Tokens per Sec:     8876, Lr: 0.000200
+2020-05-12 17:46:22,023 Example #0
+2020-05-12 17:46:22,024 	Raw source:     ['ein', 'schlanker', 'gelblicher', 'hund', 'beim', 'absolvieren', 'eines', 'hindernislaufs', ',', 'der', 'in', 'einem', 'bereich', 'mit', 'nacktem', 'erdboden', 'aufgebaut', 'ist']
+2020-05-12 17:46:22,024 	Raw hypothesis: ['a', 'tanned', 'dog', 'is', 'pushing', 'a', 'trotting', 'with', 'a', 'cable', 'item', 'in', 'a', 'area', '.']
+2020-05-12 17:46:22,024 	Source:     ein schlanker gelblicher hund beim absolvieren eines hindernislaufs , der in einem bereich mit nacktem erdboden aufgebaut ist
+2020-05-12 17:46:22,024 	Reference:  a sleek yellow dog mid run on a dirt area on an obstacle course
+2020-05-12 17:46:22,025 	Hypothesis: a tanned dog is pushing a trotting with a cable item in a area .
+2020-05-12 17:46:22,025 Example #1
+2020-05-12 17:46:22,025 	Raw source:     ['ein', 'schwarz-weiﬂ-foto', 'eines', 'hundes', ',', 'der', 'nach', 'vorn', 'blickt', ',', 'mit', 'einem', 'hintergrund', 'aus', 'schildern', 'in', 'einer', 'asiatischen', 'sprache', '.']
+2020-05-12 17:46:22,025 	Raw hypothesis: ['a', 'contestant', 'of', 'water', ',', 'following', 'their', 'dog', 'while', 'looking', 'in', 'a', 'asian', 'banner', '.']
+2020-05-12 17:46:22,026 	Source:     ein schwarz-weiﬂ-foto eines hundes , der nach vorn blickt , mit einem hintergrund aus schildern in einer asiatischen sprache .
+2020-05-12 17:46:22,026 	Reference:  a black and white photo of a dog staring ahead with a background of signs written in asian language characters .
+2020-05-12 17:46:22,026 	Hypothesis: a contestant of water , following their dog while looking in a asian banner .
+2020-05-12 17:46:22,026 Example #2
+2020-05-12 17:46:22,027 	Raw source:     ['eine', 'luftaufnahme', 'mit', 'braun', 'werdenden', 'b‰umen', ',', 'einem', 'schlossartigen', 'geb‰ude', ',', 'das', 'darin', 'zu', 'erkennen', 'ist', ',', 'und', 'einer', 'berglandschaft', 'am', 'horizont', '.']
+2020-05-12 17:46:22,027 	Raw hypothesis: ['a', 'contestant', 'with', 'brown', 'chips', 'crossing', 'trees', ',', 'when', 'he', 'pulls', 'a', 'cable', 'building', ',', 'with', 'a', 'mountainous', 'passes', 'on', 'the', 'horizon', '.']
+2020-05-12 17:46:22,027 	Source:     eine luftaufnahme mit braun werdenden b‰umen , einem schlossartigen geb‰ude , das darin zu erkennen ist , und einer berglandschaft am horizont .
+2020-05-12 17:46:22,027 	Reference:  an aerial landscape photo of browning grasses and a castle-like structure peaking through and a mountain landscape in the horizon .
+2020-05-12 17:46:22,027 	Hypothesis: a contestant with brown chips crossing trees , when he pulls a cable building , with a mountainous passes on the horizon .
+2020-05-12 17:46:22,028 Validation result (greedy) at epoch  77, step    12000: token_accuracy:   6.25, loss: 54411.5781, ppl:  81.1695, duration: 11.4340s
+2020-05-12 17:46:49,506 Epoch  77: total training loss 6.77
+2020-05-12 17:46:49,508 EPOCH 78
+2020-05-12 17:47:21,474 Epoch  78 Step:    12200 Batch Loss:     0.023839 Tokens per Sec:     8735, Lr: 0.000200
+2020-05-12 17:47:36,010 Epoch  78: total training loss 6.30
+2020-05-12 17:47:36,010 EPOCH 79
+2020-05-12 17:48:19,794 Epoch  79 Step:    12400 Batch Loss:     0.030413 Tokens per Sec:     8905, Lr: 0.000200
+2020-05-12 17:48:21,722 Epoch  79: total training loss 7.41
+2020-05-12 17:48:21,723 EPOCH 80
+2020-05-12 17:49:07,917 Epoch  80: total training loss 5.18
+2020-05-12 17:49:07,918 EPOCH 81
+2020-05-12 17:49:18,467 Epoch  81 Step:    12600 Batch Loss:     0.031681 Tokens per Sec:     8875, Lr: 0.000200
+2020-05-12 17:49:53,638 Epoch  81: total training loss 3.94
+2020-05-12 17:49:53,639 EPOCH 82
+2020-05-12 17:50:16,808 Epoch  82 Step:    12800 Batch Loss:     0.025925 Tokens per Sec:     8913, Lr: 0.000200
+2020-05-12 17:50:39,269 Epoch  82: total training loss 3.86
+2020-05-12 17:50:39,270 EPOCH 83
+2020-05-12 17:51:15,018 Epoch  83 Step:    13000 Batch Loss:     0.017586 Tokens per Sec:     8923, Lr: 0.000200
+2020-05-12 17:51:24,830 Epoch  83: total training loss 3.80
+2020-05-12 17:51:24,830 EPOCH 84
+2020-05-12 17:52:09,814 Epoch  84: total training loss 3.57
+2020-05-12 17:52:09,815 EPOCH 85
+2020-05-12 17:52:12,849 Epoch  85 Step:    13200 Batch Loss:     0.020399 Tokens per Sec:     8851, Lr: 0.000200
+2020-05-12 17:52:55,634 Epoch  85: total training loss 3.22
+2020-05-12 17:52:55,635 EPOCH 86
+2020-05-12 17:53:11,125 Epoch  86 Step:    13400 Batch Loss:     0.018362 Tokens per Sec:     8942, Lr: 0.000200
+2020-05-12 17:53:40,992 Epoch  86: total training loss 3.67
+2020-05-12 17:53:40,993 EPOCH 87
+2020-05-12 17:54:08,915 Epoch  87 Step:    13600 Batch Loss:     0.022859 Tokens per Sec:     8967, Lr: 0.000200
+2020-05-12 17:54:27,110 Epoch  87: total training loss 3.61
+2020-05-12 17:54:27,110 EPOCH 88
+2020-05-12 17:55:07,216 Epoch  88 Step:    13800 Batch Loss:     0.021979 Tokens per Sec:     8954, Lr: 0.000200
+2020-05-12 17:55:12,922 Epoch  88: total training loss 4.38
+2020-05-12 17:55:12,923 EPOCH 89
+2020-05-12 17:55:59,233 Epoch  89: total training loss 6.77
+2020-05-12 17:55:59,234 EPOCH 90
+2020-05-12 17:56:05,960 Epoch  90 Step:    14000 Batch Loss:     0.032550 Tokens per Sec:     8818, Lr: 0.000200
+2020-05-12 17:56:44,789 Epoch  90: total training loss 4.71
+2020-05-12 17:56:44,790 EPOCH 91
+2020-05-12 17:57:04,250 Epoch  91 Step:    14200 Batch Loss:     0.024713 Tokens per Sec:     9100, Lr: 0.000200
+2020-05-12 17:57:29,783 Epoch  91: total training loss 3.72
+2020-05-12 17:57:29,784 EPOCH 92
+2020-05-12 17:58:01,821 Epoch  92 Step:    14400 Batch Loss:     0.018502 Tokens per Sec:     9081, Lr: 0.000200
+2020-05-12 17:58:15,007 Epoch  92: total training loss 3.40
+2020-05-12 17:58:15,008 EPOCH 93
+2020-05-12 17:58:59,813 Epoch  93 Step:    14600 Batch Loss:     0.033734 Tokens per Sec:     8903, Lr: 0.000200
+2020-05-12 17:59:00,701 Epoch  93: total training loss 4.65
+2020-05-12 17:59:00,702 EPOCH 94
+2020-05-12 17:59:46,160 Epoch  94: total training loss 4.02
+2020-05-12 17:59:46,161 EPOCH 95
+2020-05-12 17:59:58,402 Epoch  95 Step:    14800 Batch Loss:     0.021763 Tokens per Sec:     9001, Lr: 0.000200
+2020-05-12 18:00:32,052 Epoch  95: total training loss 3.52
+2020-05-12 18:00:32,053 EPOCH 96
+2020-05-12 18:00:56,503 Epoch  96 Step:    15000 Batch Loss:     0.022188 Tokens per Sec:     9081, Lr: 0.000200
+2020-05-12 18:01:17,499 Epoch  96: total training loss 4.66
+2020-05-12 18:01:17,500 EPOCH 97
+2020-05-12 18:01:55,207 Epoch  97 Step:    15200 Batch Loss:     0.032128 Tokens per Sec:     8843, Lr: 0.000200
+2020-05-12 18:02:03,426 Epoch  97: total training loss 4.54
+2020-05-12 18:02:03,427 EPOCH 98
+2020-05-12 18:02:49,035 Epoch  98: total training loss 4.55
+2020-05-12 18:02:49,036 EPOCH 99
+2020-05-12 18:02:53,580 Epoch  99 Step:    15400 Batch Loss:     0.025065 Tokens per Sec:     8930, Lr: 0.000200
+2020-05-12 18:03:34,655 Epoch  99: total training loss 4.86
+2020-05-12 18:03:34,656 EPOCH 100
+2020-05-12 18:03:51,247 Epoch 100 Step:    15600 Batch Loss:     0.018396 Tokens per Sec:     8965, Lr: 0.000200
+2020-05-12 18:04:20,060 Epoch 100: total training loss 4.03
+2020-05-12 18:04:20,061 Training ended after 100 epochs.
+2020-05-12 18:04:20,061 Best validation result (greedy) at step     4000:  22.96 ppl.
+2020-05-12 18:04:43,148  dev token_accuracy:   6.58 [Beam search decoding with beam size = 5 and alpha = 1.0]
+2020-05-12 18:04:43,150 Translations saved to: models/sy_transformer_wmt17_ende_2\00004000.hyps.dev
+2020-05-12 18:04:50,394 test token_accuracy:   5.63 [Beam search decoding with beam size = 5 and alpha = 1.0]
+2020-05-12 18:04:50,395 Translations saved to: models/sy_transformer_wmt17_ende_2\00004000.hyps.test
