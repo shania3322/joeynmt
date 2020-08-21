@@ -1,0 +1,109 @@
+shwa01@ntw-420 MINGW64 ~/nmtproject/github/preprocess/sockeye/code (master)
+$ bash -x prepare_train.sh
++ set -eu
++ . env.sh
+++ DATADIR=/c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/
+++ PAIR=en-de
++++ echo en-de
++++ cut -d- -f1
+++ SOURCE=en
++++ echo en-de
++++ cut -d- -f2
+++ TARGET=de
+++ MOSES=/c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES
+++ BPE=/c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/subword-nmt/subword_nmt
+++ MARIAN=/path/to/marian
+++ SOCKEYE=/path/to/sockeye
+++ FAIRSEQ=/path/to/fairseq-py
+++ NEMATUS=/path/to/nematus
+++ OPENNMT=/path/to/opennmt
++ [[ ! -d /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES ]]
++ [[ ! -d /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/subword-nmt/subword_nmt ]]
++ for pair in en-de lv-en
+++ echo en-de
+++ cut -d- -f1
++ src=en
+++ echo en-de
+++ cut -d- -f2
++ tgt=de
++ [[ ! -d data/en-de ]]
++ for lang in $src $tgt
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/normalize-punctuation.perl -l en
+++ cat train.en-de.txt
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/remove-non-printing-char.perl
++ for lang in $src $tgt
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/tokenizer.perl -q -no-escape -protected /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/basic-protected-patterns -l en
++ for prefix in $(cat train.$pair.txt)
++ cat /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/commoncrawl.de-en.en
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/normalize-punctuation.perl -l de
+++ cat train.en-de.txt
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/remove-non-printing-char.perl
++ wait
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/tokenizer.perl -q -no-escape -protected /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/basic-protected-patterns -l de
++ for prefix in $(cat train.$pair.txt)
++ cat /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/commoncrawl.de-en.de
++ for prefix in $(cat train.$pair.txt)
++ cat /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/europarl-v7.de-en.de
++ for prefix in $(cat train.$pair.txt)
++ cat /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/europarl-v7.de-en.en
++ for prefix in $(cat train.$pair.txt)
++ cat /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/news-commentary-v12.de-en.de
++ for prefix in $(cat train.$pair.txt)
++ cat /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/news-commentary-v12.de-en.en
++ for prefix in $(cat train.$pair.txt)
++ cat /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/rapid2016.de-en.de
++ for prefix in $(cat train.$pair.txt)
++ cat /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/rapid2016.de-en.en
++ cd data/en-de
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/training/clean-corpus-n.perl train.tok en de train.tok.clean 1 100
+clean-corpus.perl: processing train.tok.en & .de to train.tok.clean, cutoff 1-100, ratio 9
+..........(100000)..........(200000)..........(300000)..........(400000)..........(500000)..........(600000)..........(700000)..........(800000)..........(900000)..........(1000000)..........(1100000)..........(1200000)..........(1300000)..........(1400000)..........(1500000)..........(1600000)..........(1700000)..........(1800000)..........(1900000)..........(2000000)..........(2100000)..........(2200000)..........(2300000)..........(2400000)..........(2500000)..........(2600000)..........(2700000)..........(2800000)..........(2900000)..........(3000000)..........(3100000)..........(3200000)..........(3300000)..........(3400000)..........(3500000)..........(3600000)..........(3700000)..........(3800000)..........(3900000)..........(4000000)..........(4100000)..........(4200000)..........(4300000)..........(4400000)..........(4500000)..........(4600000)..........(4700000)..........(4800000)..........(4900000)..........(5000000)..........(5100000)..........(5200000)..........(5300000)..........(5400000)..........(5500000)..........(5600000)..........(5700000)..........(5800000)..........(5900000).
+Input sentences: 5919142  Output sentences:  5889612
++ cat train.tok.clean.en train.tok.clean.de
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/subword-nmt/subword_nmt/learn_bpe.py -s 32000
++ for ext in $src $tgt
++ cat train.tok.clean.en
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/subword-nmt/subword_nmt/apply_bpe.py -c bpe.model
++ for ext in $src $tgt
++ cat train.tok.clean.de
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/subword-nmt/subword_nmt/apply_bpe.py -c bpe.model
++ cd ../..
++ for pair in en-de lv-en
+++ echo lv-en
+++ cut -d- -f1
++ src=lv
+++ echo lv-en
+++ cut -d- -f2
++ tgt=en
++ [[ ! -d data/lv-en ]]
++ mkdir -p data/lv-en
++ for lang in $src $tgt
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/normalize-punctuation.perl -l lv
+++ cat train.lv-en.txt
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/remove-non-printing-char.perl
++ for lang in $src $tgt
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/tokenizer.perl -q -no-escape -protected /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/basic-protected-patterns -l lv
++ for prefix in $(cat train.$pair.txt)
++ cat $'/c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/dcep\r.lv'
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/normalize-punctuation.perl -l en
+++ cat train.lv-en.txt
+cat: '/c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/dcep'$'\r''.lv': No such file or directory
++ for prefix in $(cat train.$pair.txt)
++ cat $'/c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/dcep\r.en'
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/remove-non-printing-char.perl
++ wait
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/tokenizer.perl -q -no-escape -protected /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/tokenizer/basic-protected-patterns -l en
+cat: '/c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/data/en-de/dcep'$'\r''.en': No such file or directory
++ cd data/lv-en
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/MOSES/scripts/training/clean-corpus-n.perl train.tok lv en train.tok.clean 1 100
+clean-corpus.perl: processing train.tok.lv & .en to train.tok.clean, cutoff 1-100, ratio 9
+
+Input sentences: 0  Output sentences:  0
++ cat train.tok.clean.lv train.tok.clean.en
++ /c/Users/shwa01/nmtproject/github/preprocess/sockeye/code/subword-nmt/subword_nmt/learn_bpe.py -s 32000
+Traceback (most recent call last):
+  File "C:/Users/shwa01/nmtproject/github/preprocess/sockeye/code/subword-nmt/subword_nmt/learn_bpe.py", line 289, in <module>
+    learn_bpe(args.input, args.output, args.symbols, args.min_frequency, args.verbose, is_dict=args.dict_input, total_symbols=args.total_symbols)
+  File "C:/Users/shwa01/nmtproject/github/preprocess/sockeye/code/subword-nmt/subword_nmt/learn_bpe.py", line 231, in learn_bpe
+    threshold = max(stats.values()) / 10
+ValueError: max() arg is an empty sequence

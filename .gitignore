@@ -1,0 +1,16 @@
+# ignore large files
+github/joeynmt/models/
+datasets/
+pretrained/
+wget/
+
+# ignore files that already moved to joeynmt
+github/jupyternotebook/
+github/vizseq/
+github/preprocess/sockeye/code/data/
+results/
+tools/
+
+
+
+

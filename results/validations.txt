@@ -1,3 +1,0 @@
-Steps: 4000	Loss: 38782.66016	PPL: 22.95875	token_accuracy: 6.22021	LR: 0.00020000	*
-Steps: 8000	Loss: 49468.65234	PPL: 54.44244	token_accuracy: 6.20490	LR: 0.00020000	
-Steps: 12000	Loss: 54411.57812	PPL: 81.16955	token_accuracy: 6.24852	LR: 0.00020000	
