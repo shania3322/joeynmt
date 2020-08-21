@@ -9,7 +9,8 @@ github/jupyternotebook/
 github/vizseq/
 github/preprocess/sockeye/code/data/
 results/
-tools/
+tools/pyter
+tools/tercom*
 
 
 
