@@ -1,0 +1,20 @@
+python -m joeynmt train configs/sy_transformer_copy_1.yaml
+python -m joeynmt test models/sy_transformer_copy_1/config.yaml --output_path models/sy_transformer_copy_1/predictions
+
+python -m joeynmt train configs/sy_transformer_wmt17_ende_1.yaml
+python -m joeynmt test models/sy_transformer_wmt17_ende_1/config.yaml --output_path models/sy_transformer_wmt17_ende_1/predictions
+
+python -m joeynmt test models/sy_transformer_wmt17_ende_groundhog/config.yaml --output_path models/sy_transformer_wmt17_ende_groundhog/predictions
+python -m joeynmt test models/sy_transformer_wmt17_ende_groundhog_2/config.yaml --output_path models/sy_transformer_wmt17_ende_groundhog_2/predictions_1
+
+python -m joeynmt test models/sy_transformer_wmt17_ende_groundhog_3/config.yaml --output_path models/sy_transformer_wmt17_ende_groundhog_3/test_score
+
+python -m joeynmt test models/sy_transformer_wmt17_ende_groundhog_3/config.yaml --output_path models/sy_transformer_wmt17_ende_groundhog_3/test_50
+
+
+
+tensorboard --logdir path/to/logs
+tensorboard --logdir models/sy_transformer_wmt17_ende_groundhog_3/tensorboard
+
+
+python scripts/build_vocab.py --train_paths postediting/data/groundhog/train.tok.bpe.de postediting/data/groundhog/train.tok.bpe.en --output_path vocab/vocab_ende.txt
