@@ -1,6 +1,3 @@
-[submodule "tools/diff-match-pathch"]
-	path = tools/diff-match-pathch
-	url = https://github.com/google/diff-match-patch.git
 [submodule "tools/diff-match-patch"]
 	path = tools/diff-match-patch
 	url = https://github.com/google/diff-match-patch.git
